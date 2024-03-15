@@ -1,0 +1,7 @@
+node_modules
+*.swo
+*.swp
+.env
+config
+deprecated.README.md
+documentation

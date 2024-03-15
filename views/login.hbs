@@ -1,0 +1,26 @@
+
+  <div class="header">
+    <h1>Login</h1>
+  </div>
+
+<div class="container">
+    <div class="form-wrap">
+        <form action="/login" method="post">
+            <div class="form-control">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-control">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-control">
+                <button type="submit" class="btn">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+    {{#if error}}
+        <p>{{error}}</p>
+    {{/if}}

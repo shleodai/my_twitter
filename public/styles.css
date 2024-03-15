@@ -1,0 +1,53 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .header, .footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .form-wrap {
+    background: #f7f7f7;
+    padding: 15px;
+    margin-top: 15px;
+  }
+  
+  .form-control {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .form-control input {
+    width: calc(100% - 20px);
+    border: 1px solid #ddd;
+  }
+  
+  .btn {
+    padding: 10px;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #555;
+  }
+  
+  .message {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  

@@ -1,0 +1,36 @@
+<div class="header">
+    <h1>{{user.username}}, you are logged in!</h1>
+
+</div>
+
+<ul>
+    <li>
+        <form method="post" action="/logout">
+            <button type="submit">Logout</button>
+        </form>
+    </li>
+    <li>
+        <!-- post new message -->
+        <a href="/new_message">Post New Thread</a>
+    </li>
+</ul>
+
+<div class="container">
+    {{#if messages}}
+    {{#each messages}}
+    <div class="message">
+        <p> Posted by : {{user.username}} </p>
+        <p>{{this.content}}</p>
+        <p>Created at: {{this.timestamp}}</p>
+        <p><form method="post" action="/delete_message/{{this._id}}">
+        <!-- another way to pass the message id to the server
+            <input type="hidden" name="messageID" value={{this._id}}>
+            -->
+            <button type="submit">Delete</button>
+        </form></p>
+    </div>
+    {{/each}}
+    {{else}}
+    <p>No messages to show</p>
+    {{/if}}
+</div>
