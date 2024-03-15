@@ -1,4 +1,4 @@
-# BS for Blog System
+# My Twitter
 
 ## How to use it
 
